@@ -1,5 +1,5 @@
 // Feature: portfolio-website, Property 5: Every skill in data is rendered as a badge
-import { render, screen, cleanup } from '@testing-library/react';
+import { render, cleanup } from '@testing-library/react';
 import { describe, it, expect, afterEach } from 'vitest';
 import * as fc from 'fast-check';
 import SkillBadge from '../SkillBadge';
