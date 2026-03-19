@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@theme {
+  /* Colors */
+  --color-accent-blue: #0EA5E9;
+  --color-accent-cyan: #06B6D4;
+  --color-accent-green: #22C55E;
+  --color-accent-lavender: #A78BFA;
+  --color-soft-blue: #E0F2FE;
+  --color-soft-green: #DCFCE7;
+  --color-soft-lavender: #F3E8FF;
+
+  /* Font family */
+  --font-family-sans: 'Inter', 'Poppins', system-ui, sans-serif;
+
+  /* Box shadows */
+  --shadow-soft-sm: 0 2px 8px 0 rgba(0, 0, 0, 0.06);
+  --shadow-soft-md: 0 4px 20px 0 rgba(0, 0, 0, 0.08);
+  --shadow-soft-lg: 0 8px 40px 0 rgba(0, 0, 0, 0.10);
+  --shadow-glow-blue: 0 0 20px 2px rgba(56, 189, 248, 0.25);
+
+  /* Border radius */
+  --radius-2xl: 1rem;
+  --radius-3xl: 1.5rem;
+}
+
+@layer base {
+  :root {
+    /* Fluid typography */
+    --text-hero: clamp(2.5rem, 6vw, 5rem);
+    --text-section: clamp(1.75rem, 3.5vw, 2.75rem);
+    --text-body: clamp(0.9rem, 1.5vw, 1.125rem);
+    --text-small: clamp(0.75rem, 1.2vw, 0.875rem);
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    background-color: #ffffff;
+    color: #0f172a;
+    font-family: 'Inter', 'Poppins', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  #root {
+    width: 100%;
+    min-height: 100vh;
+  }
+}
+
+@layer utilities {
+  .gradient-text {
+    background: linear-gradient(135deg, #0EA5E9, #A78BFA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .gradient-bg {
+    background: linear-gradient(135deg, #0EA5E9, #A78BFA);
+  }
+}
