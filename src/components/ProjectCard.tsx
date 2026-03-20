@@ -6,7 +6,7 @@ interface ProjectCardProps {
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
-  const { title, description, stack, githubUrl, liveUrl, isSIHWinner, featured } = project;
+  const { title, description, stack, githubUrl, liveUrl, isSIHWinner, isOngoing, featured } = project;
   const cardRef = useRef<HTMLDivElement>(null);
 
   // 3D tilt effect on mouse move
@@ -51,6 +51,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
       {isSIHWinner && (
         <span className="absolute top-4 right-4 inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-gradient-to-r from-accent-blue to-accent-lavender text-white shadow-soft-sm select-none">
           🏆 SIH Winner
+        </span>
+      )}
+
+      {/* Ongoing badge */}
+      {isOngoing && !isSIHWinner && (
+        <span className="absolute top-4 right-4 inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200 select-none">
+          <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
+          Ongoing
         </span>
       )}
 

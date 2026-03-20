@@ -10,6 +10,7 @@ export interface Project {
   githubUrl?: string;
   liveUrl?: string;
   isSIHWinner?: boolean;
+  isOngoing?: boolean;
   featured?: boolean;
   show?: boolean; // set to true to display in the Projects section
 }
@@ -51,267 +52,155 @@ export const PROJECTS: Project[] = [
     id: 'pbl-management',
     title: 'PBL Management System',
     description:
-      'Serverless web application deployed on AWS Lambda serving 5,000+ users. Built with a full CI/CD pipeline using GitHub Actions, enabling automated deployments and zero-downtime releases.',
+      'Developed a live PBL (Project-Based Learning) Management System on AWS Lambda serving 5,000+ users, featuring separate panels for students, project guides, industry mentors, and admins, automating project workflows, guide allocation, and evaluation.',
     stack: ['AWS Lambda', 'Node.js', 'React', 'DynamoDB', 'GitHub Actions'],
     githubUrl: 'https://github.com/aditya-shinde-45/pbl-management',
-    isSIHWinner: true,
     featured: true,
     show: true,
   },
 
-  // ── Full-Stack Web ─────────────────────────────────────────────────────────
   {
-    id: 'gradebookx',
-    title: 'GradeBookX',
+    id: 'oilseednexsus',
+    title: 'Beejsampada',
     description:
-      'Full-stack student grade management system with course, subject, and division management. Features JWT-based teacher authentication, role-based access, and a React dashboard backed by Express + PostgreSQL.',
-    stack: ['React', 'Node.js', 'Express', 'PostgreSQL', 'Sequelize', 'Tailwind CSS', 'JWT'],
-    githubUrl: 'https://github.com/aditya-shinde-45/gradebookx',
+      'Developed an agricultural marketplace for oilseed trading and supply chain management, supporting multiple stakeholders including farmers, industries, oilseed buyers, and by-product buyers. Integrated Hyperledger blockchain with a token-based system to enable secure, transparent, and tamper-proof transactions.',
+    stack: ['Flutter', 'Dart'],
+    githubUrl: 'https://github.com/aditya-shinde-45/oilseednexsus',
     show: true,
+    isSIHWinner: true,
   },
+
   {
     id: 'barterbee',
     title: 'BarterBee',
     description:
-      'Community-driven barter platform where users exchange skills, items, and opinions without money. Features video calling for skill sessions, a points economy for polls, and real-time activity tracking.',
+      'Built a community-driven barter platform enabling users to exchange skills, items, and opinions without monetary transactions. Features include real-time activity tracking, video calling for skill sessions, and a points-based system to encourage engagement and fair exchanges.',
     stack: ['React', 'Tailwind CSS', 'React Router', 'Vite'],
     githubUrl: 'https://github.com/aditya-shinde-45/BarterBee',
     show: true,
   },
+
   {
-    id: 'edumanage-college',
-    title: 'EduManage College',
+    id: 'gradebookx',
+    title: 'GradeBookX',
     description:
-      'College education management platform built with TypeScript. Handles student records, course management, and administrative workflows.',
-    stack: ['TypeScript', 'React'],
-    githubUrl: 'https://github.com/aditya-shinde-45/edumanage-college',
+      'Developed a full-stack student grade management system with features like course, subject, and division management. Implemented JWT-based authentication and role-based access control, along with a responsive React dashboard for efficient academic data handling.',
+    stack: ['React', 'Node.js', 'Express', 'PostgreSQL', 'Sequelize', 'Tailwind CSS', 'JWT'],
+    githubUrl: 'https://github.com/aditya-shinde-45/gradebookx',
     show: true,
   },
-  
+
   {
     id: 'ai-production-scheduling',
     title: 'AI Production Scheduling',
     description:
-      'AI-driven production scheduling system that optimises manufacturing workflows using intelligent algorithms.',
-    stack: ['JavaScript'],
+      'Built an AI-powered production scheduling system for a beverage manufacturing company, using historical sales data and market trends to forecast demand. Applied machine learning techniques like time-series forecasting and regression to generate optimized production plans and improve operational efficiency.',
+    stack: [
+      'React.js',
+      'Bootstrap',
+      'Node.js',
+      'Machine Learning',
+      'Time-Series Forecasting',
+      'Regression Models'
+    ],
     githubUrl: 'https://github.com/aditya-shinde-45/Ai-production-scheduling1',
+    isOngoing: true,
     show: true,
   },
+
   {
     id: 'help-hour',
     title: 'Help Hour',
     description:
-      'Community help and volunteering platform built with HTML. Connects people who need help with those who can offer it.',
+      'Developed a web-based household service platform connecting users with service providers such as electricians, plumbers, and cleaning professionals. The platform enables easy service discovery, request management, and efficient interaction between customers and providers.',
     stack: ['HTML', 'CSS', 'JavaScript'],
     githubUrl: 'https://github.com/aditya-shinde-45/Help-Hour',
     show: true,
   },
+
   {
     id: 'war-impact-analytics',
     title: 'War Impact Analytics',
     description:
-      'Data analytics dashboard visualising the humanitarian and economic impact of conflicts.',
+      'Created a data analytics dashboard to visualize the humanitarian and economic impact of global conflicts. The platform presents insights through interactive charts and data representations, helping users understand trends and consequences of war scenarios.',
     stack: ['JavaScript'],
     githubUrl: 'https://github.com/aditya-shinde-45/war-impact-analytics',
     show: true,
   },
 
-  // ── Travel & Tourism ───────────────────────────────────────────────────────
-  {
-    id: 'toursand-travel',
-    title: 'Tours & Travel',
-    description:
-      'Modern travel booking and tour discovery platform built with TypeScript. Live on Vercel.',
-    stack: ['TypeScript', 'React'],
-    githubUrl: 'https://github.com/aditya-shinde-45/toursand-travel',
-    liveUrl: 'https://toursand-travel-eta.vercel.app',
-    show: true,
-  },
-  {
-    id: 'adityatoursandtravel',
-    title: 'Aditya Tours & Travel',
-    description:
-      'Travel agency website with tour packages, booking flow, and destination showcases. Deployed on Vercel.',
-    stack: ['TypeScript', 'React'],
-    githubUrl: 'https://github.com/aditya-shinde-45/adityatoursandtravel',
-    liveUrl: 'https://adityatoursandtravel.vercel.app',
-    show: true,
-  },
-  {
-    id: 'kolumbuswav',
-    title: 'KolumbusWay',
-    description:
-      'Travel exploration and navigation web app. Live on Vercel.',
-    stack: ['JavaScript'],
-    githubUrl: 'https://github.com/aditya-shinde-45/KolumbusWay',
-    liveUrl: 'https://kolumbus-way.vercel.app',
-    show: true,
-  },
-
-  // ── AI / ML ────────────────────────────────────────────────────────────────
   {
     id: 'skintel',
     title: 'SkinIntel',
     description:
-      'AI-powered skin analysis platform built with TypeScript. Analyses skin conditions and provides intelligent recommendations. Live on Vercel.',
+      'Built an AI-powered skin analysis platform that evaluates skin conditions and provides intelligent recommendations. Designed with a modern React interface and deployed on Vercel, enabling real-time analysis and user-friendly interaction.',
     stack: ['TypeScript', 'React'],
     githubUrl: 'https://github.com/aditya-shinde-45/SkinIntel',
     liveUrl: 'https://skin-intel.vercel.app',
+    isOngoing: true,
     show: true,
   },
+
   {
     id: 'neurosight',
     title: 'NeuroSight',
     description:
-      'Neural network-based vision analysis tool for intelligent image recognition and classification.',
+      'Developed a neural network-based vision analysis system for image recognition and classification tasks. Utilized machine learning techniques to process visual data and generate accurate predictions for intelligent decision-making.',
     stack: ['Python', 'Machine Learning'],
     githubUrl: 'https://github.com/aditya-shinde-45/NeuroSight',
     show: true,
   },
-  {
-    id: 'animal-classification-ml',
-    title: 'Animal Classification ML Model',
-    description:
-      'Machine learning model for classifying animal species from images using Python.',
-    stack: ['Python', 'Machine Learning'],
-    githubUrl: 'https://github.com/aditya-shinde-45/animal-classification-ml-model',
-    show: true,
-  },
+
   {
     id: 'rasberry-pi-ml',
     title: 'Raspberry Pi ML',
     description:
-      'Machine learning deployment on Raspberry Pi for edge inference and IoT applications.',
+      'Implemented machine learning models on Raspberry Pi for edge computing and IoT-based applications. The system enables real-time inference on low-power devices, supporting efficient and scalable intelligent solutions.',
     stack: ['Python', 'Raspberry Pi', 'Machine Learning'],
     githubUrl: 'https://github.com/aditya-shinde-45/rasberry-pi-ml',
     show: true,
   },
-  {
-    id: 'ai-mock',
-    title: 'AI Mock',
-    description:
-      'AI-powered mock interview platform for technical interview preparation.',
-    stack: ['JavaScript'],
-    githubUrl: 'https://github.com/aditya-shinde-45/ai-mock',
-    show: true,
-  },
-  {
-    id: 'ai-driven-depclick',
-    title: 'AI-Driven DepClick',
-    description:
-      'AI-driven deployment automation tool for streamlining CI/CD workflows.',
-    stack: ['DevOps', 'AI'],
-    githubUrl: 'https://github.com/aditya-shinde-45/Ai-driven-depclick',
-    show: true,
-  },
 
-  // ── Flutter / Mobile ───────────────────────────────────────────────────────
   {
     id: 'agropath',
     title: 'AgroPath',
     description:
-      'Flutter mobile application providing agricultural guidance and smart pathfinding for farmers.',
+      'Developed a Flutter-based mobile application providing agricultural guidance and smart pathfinding for farmers. The app helps users make informed decisions by offering structured insights and easy-to-use navigation features.',
     stack: ['Flutter', 'Dart'],
     githubUrl: 'https://github.com/aditya-shinde-45/AgroPath',
     show: true,
   },
+
   {
     id: 'posturexpert',
     title: 'PostureXpert',
     description:
-      'Flutter app for real-time posture analysis and correction guidance using mobile sensors.',
+      'Built a Flutter application for real-time posture monitoring and correction using mobile sensor data. The system analyzes user posture continuously and provides feedback to improve health and reduce long-term physical strain.',
     stack: ['Flutter', 'Dart'],
     githubUrl: 'https://github.com/aditya-shinde-45/PostureXpert',
     show: true,
   },
+
   {
     id: 'bmi-app',
     title: 'BMI App',
     description:
-      'Cross-platform BMI calculator with health category feedback, built with Flutter and C++.',
+      'Developed a cross-platform BMI calculator application that evaluates user health metrics and provides category-based feedback. Built using Flutter and C++ to ensure performance and smooth user experience.',
     stack: ['Flutter', 'C++'],
     githubUrl: 'https://github.com/aditya-shinde-45/BMI-app',
     show: true,
   },
+
   {
     id: 'escusely',
     title: 'Escusely',
     description:
-      'Flutter utility app for generating and managing excuse messages.',
+      'Created a Flutter utility application for generating and managing excuse messages. The app provides quick, customizable templates, helping users efficiently handle daily communication scenarios.',
     stack: ['Flutter', 'Dart'],
     githubUrl: 'https://github.com/aditya-shinde-45/escusely',
     show: true,
   },
-  {
-    id: 'metafix',
-    title: 'Metafix',
-    description:
-      'Flutter app for metadata management and file fixing utilities.',
-    stack: ['Flutter', 'Dart'],
-    githubUrl: 'https://github.com/aditya-shinde-45/Metafix',
-    show: true,
-  },
-  {
-    id: 'oilseednexsus',
-    title: 'OilSeedNexus',
-    description:
-      'Agricultural marketplace for oilseed trading and supply chain management. Built with Flutter, live on Vercel.',
-    stack: ['Flutter', 'Dart'],
-    githubUrl: 'https://github.com/aditya-shinde-45/oilseednexsus',
-    liveUrl: 'https://oilseednexsus.vercel.app',
-    show: true,
-  },
-  {
-    id: 'customer-survey',
-    title: 'Customer Survey',
-    description:
-      'Mobile survey and feedback collection app built with Flutter.',
-    stack: ['Flutter', 'Dart'],
-    githubUrl: 'https://github.com/aditya-shinde-45/customer-survey',
-    show: true,
-  },
-
-  // ── DevOps / Infrastructure ────────────────────────────────────────────────
-  {
-    id: 'docker',
-    title: 'Docker Experiments',
-    description:
-      'Collection of Docker configurations, Python scripts, and containerisation experiments.',
-    stack: ['Docker', 'Python'],
-    githubUrl: 'https://github.com/aditya-shinde-45/Docker',
-    show: true,
-  },
-  {
-    id: 'awtpl',
-    title: 'AWTPL',
-    description:
-      'PHP-based web project for AWTPL company website and management system.',
-    stack: ['PHP'],
-    githubUrl: 'https://github.com/aditya-shinde-45/awtpl',
-    show: true,
-  },
-
-  // ── Portfolio / Misc ───────────────────────────────────────────────────────
-  {
-    id: 'kedar-portfolio',
-    title: 'Kedar Portfolio',
-    description:
-      'Personal portfolio website built for a client. Live on Vercel.',
-    stack: ['JavaScript'],
-    githubUrl: 'https://github.com/aditya-shinde-45/kedar-portfolio',
-    liveUrl: 'https://kedar-portfolio-nine.vercel.app',
-    show: true,
-  },
-  {
-    id: 'aditya-shinde-portfolio',
-    title: 'Aditya Shinde Portfolio (v1)',
-    description:
-      'Previous version of personal portfolio website.',
-    stack: ['JavaScript'],
-    githubUrl: 'https://github.com/aditya-shinde-45/Aditya-Shinde-Portfolio',
-    show: true,
-  },
 ];
+  
 
 // ─── Skills ───────────────────────────────────────────────────────────────────
 
