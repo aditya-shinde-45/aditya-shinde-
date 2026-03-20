@@ -51,9 +51,7 @@ const About: React.FC = () => {
               className="text-slate-500 leading-relaxed"
               style={{ fontSize: 'var(--text-body)' }}
             >
-              I'm a DevOps-focused Full Stack Developer with hands-on experience building and
-              deploying scalable cloud-native applications on AWS. I specialize in bridging the
-              gap between development and operations — writing clean code and shipping it reliably.
+              I'm a DevOps-focused Full Stack Developer with hands-on experience building and deploying scalable cloud-native applications on AWS. I specialize in bridging the gap between development and operations — writing clean code and shipping it reliably.
             </p>
 
             <p
@@ -62,18 +60,19 @@ const About: React.FC = () => {
             >
               My most significant project is the{' '}
               <span className="font-semibold text-slate-700">PBL Management System</span> — a
-              serverless platform deployed on AWS Lambda that serves 5,000+ users across multiple
-              institutions. It was built during Smart India Hackathon 2023, where my team won the
-              national-level competition.
+              a serverless platform deployed on AWS Lambda that serves 5,000+ users across multiple institutions. This project was developed as part of my college internship and is currently live in production.
             </p>
 
             <p
               className="text-slate-500 leading-relaxed"
               style={{ fontSize: 'var(--text-body)' }}
-            >
-              I'm passionate about CI/CD automation, infrastructure-as-code, and building systems
-              that are both developer-friendly and production-ready. Outside of work, I contribute
-              to open-source DevOps tooling and Terraform modules.
+            >I was also a key member of Team IdeaBliss, which developed BeejSampadha (Oilseed By-Product Value Chain) — our Smart India Hackathon 2025 project that secured a national-level win.
+            </p>
+
+             <p
+              className="text-slate-500 leading-relaxed"
+              style={{ fontSize: 'var(--text-body)' }}
+            >I was also a key member of Team IdeaBliss, which developed BeejSampadha (Oilseed By-Product Value Chain) — our Smart India Hackathon 2025 project that secured a national-level win.
             </p>
 
             {/* Contact info snippet */}

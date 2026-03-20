@@ -2,14 +2,16 @@ import React from 'react';
 
 export interface SkillBadgeProps {
   label: string;
-  category: 'cloud' | 'frontend' | 'backend' | 'devops';
+  category: 'frontend' | 'backend' | 'languages' | 'database' | 'devops' | 'other';
 }
 
 const categoryClasses: Record<SkillBadgeProps['category'], string> = {
-  cloud:    'bg-soft-blue text-sky-700',
-  devops:   'bg-soft-green text-green-700',
-  frontend: 'bg-soft-lavender text-violet-700',
-  backend:  'bg-orange-50 text-orange-700',
+  frontend:  'bg-soft-lavender text-violet-700',
+  backend:   'bg-orange-50 text-orange-700',
+  languages: 'bg-soft-blue text-sky-700',
+  database:  'bg-emerald-50 text-emerald-700',
+  devops:    'bg-soft-green text-green-700',
+  other:     'bg-slate-100 text-slate-600',
 };
 
 const SkillBadge: React.FC<SkillBadgeProps> = ({ label, category }) => {

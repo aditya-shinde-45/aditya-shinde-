@@ -1,7 +1,8 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import gsap from 'gsap';
 import { PERSONAL } from '../lib/data';
 import Button from '../components/Button';
+import ResumeViewer from '../components/ResumeViewer';
 import { EASE_OUT_EXPO, STAGGER_DELAY, DURATION_NORMAL } from '../lib/animations';
 import profileImage from '../assets/profile.png';
 
@@ -33,6 +34,7 @@ const FloatingShapes: React.FC = () => (
 
 const Hero: React.FC = () => {
   const textContainerRef = useRef<HTMLDivElement>(null);
+  const [resumeOpen, setResumeOpen] = useState(false);
 
   useEffect(() => {
     const container = textContainerRef.current;
@@ -58,7 +60,9 @@ const Hero: React.FC = () => {
   }, []);
 
   return (
-    <section
+    <>
+      {resumeOpen && <ResumeViewer onClose={() => setResumeOpen(false)} />}
+      <section
       id="hero"
       className="relative min-h-screen flex items-center overflow-hidden bg-white"
     >
@@ -83,7 +87,7 @@ const Hero: React.FC = () => {
           {/* ── Left: Text content ── */}
           <div ref={textContainerRef} className="flex-1 flex flex-col items-center lg:items-start text-center lg:text-left">
 
-            {/* Name — large, bold, gradient highlight (Req 5.2) */}
+            {/* Name */}
             <h1
               className="font-bold leading-tight mb-4"
               style={{ fontSize: 'var(--text-hero)' }}
@@ -91,7 +95,7 @@ const Hero: React.FC = () => {
               <span className="gradient-text">{PERSONAL.name}</span>
             </h1>
 
-            {/* Role subtitle (Req 5.3) */}
+            {/* Role subtitle */}
             <p
               className="text-slate-600 font-medium mb-6"
               style={{ fontSize: 'var(--text-section)' }}
@@ -99,7 +103,7 @@ const Hero: React.FC = () => {
               {PERSONAL.role}
             </p>
 
-            {/* Professional summary (Req 5.4) */}
+            {/* Professional summary */}
             <p
               className="text-slate-500 max-w-xl mb-10 leading-relaxed"
               style={{ fontSize: 'var(--text-body)' }}
@@ -107,7 +111,7 @@ const Hero: React.FC = () => {
               {PERSONAL.summary}
             </p>
 
-            {/* CTA buttons (Req 5.5) */}
+            {/* CTA buttons */}
             <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
               <Button variant="primary" href="#projects">
                 View Projects
@@ -115,10 +119,8 @@ const Hero: React.FC = () => {
               <Button variant="outline" href="#contact">
                 Contact Me
               </Button>
-              <a
-                href="/resume.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
+              <button
+                onClick={() => setResumeOpen(true)}
                 className={
                   'inline-flex items-center justify-center gap-2 min-h-[44px] min-w-[44px] px-6 py-3 rounded-2xl font-semibold text-sm ' +
                   'bg-transparent border-2 border-accent-blue text-accent-blue ' +
@@ -130,32 +132,27 @@ const Hero: React.FC = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5 5-5M12 15V3" />
                 </svg>
                 View Resume
-              </a>
+              </button>
             </div>
           </div>
 
           {/* ── Right: Profile image ── */}
           <div className="flex-shrink-0 flex items-center justify-center">
-            <div className="relative 
-     w-64 h-64 
-  lg:w-[500px] lg:h-[580px] 
-  xl:w-[600px] xl:h-[680px]">
-
-              <div className="absolute inset-0 rounded-full bg-gradient-to-br from-accent-blue to-accent-lavender opacity-20 blur-2xl scale-110" />
-
+            <div className="relative w-64 h-72 lg:w-[400px] lg:h-[520px] xl:w-[460px] xl:h-[580px]">
+              <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-accent-blue to-accent-lavender opacity-20 blur-2xl scale-110" />
               <img
                 src={profileImage}
                 alt={PERSONAL.name}
                 loading="eager"
                 className="relative z-10 w-full h-full object-contain drop-shadow-xl"
               />
-
             </div>
           </div>
 
         </div>
       </div>
     </section>
+    </>
   );
 };
 
