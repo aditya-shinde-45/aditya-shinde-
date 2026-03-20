@@ -11,7 +11,7 @@ const AchievementCard: React.FC<AchievementCardProps> = ({ achievement }) => {
   return (
     <div
       className={[
-        'flex flex-col gap-3 p-6 bg-white rounded-2xl',
+        'flex flex-col items-center text-center gap-3 p-6 bg-white rounded-2xl w-full sm:w-72',
         'border border-gray-100',
         'shadow-soft-md',
         'transition-[transform,box-shadow] duration-300 ease-in-out',

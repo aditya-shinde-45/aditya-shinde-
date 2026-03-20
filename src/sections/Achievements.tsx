@@ -47,7 +47,7 @@ const Achievements: React.FC = () => {
         </div>
 
         {/* Responsive grid: 1 col → 2 col → 4 col */}
-        <div ref={gridRef} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div ref={gridRef} className="flex flex-wrap justify-center gap-6">
           {ACHIEVEMENTS.map((achievement) => (
             <AchievementCard key={achievement.title} achievement={achievement} />
           ))}

@@ -213,7 +213,7 @@ export const EXPERIENCE: ExperienceEntry[] = [
   {
     company: 'Freelance / Open Source',
     role: 'Full Stack & DevOps Engineer',
-    period: 'Jan 2024 – Present',
+    period: 'June 2025 – Present',
     description: [
       'Architected and deployed serverless applications on AWS Lambda with DynamoDB, reducing infrastructure costs by ~60% compared to traditional EC2 setups.',
       'Built and maintained CI/CD pipelines using GitHub Actions for automated testing, linting, and zero-downtime deployments.',
@@ -242,7 +242,7 @@ export const ACHIEVEMENTS: Achievement[] = [
     title: 'Smart India Hackathon Winner',
     organization: 'Government of India — Ministry of Education',
     description:
-      'Won the national-level SIH 2023 competition by building a serverless PBL Management System deployed on AWS Lambda, serving 5,000+ users.',
+      'Won the national-level SIH 2025 competition by building a oilseed by product value chain digital platform',
   },
   {
     icon: '☁️',
@@ -258,11 +258,5 @@ export const ACHIEVEMENTS: Achievement[] = [
     description:
       'Pursuing certification to validate expertise in containerization, Docker Compose, and container orchestration workflows.',
   },
-  {
-    icon: '🚀',
-    title: 'Top Contributor — DevOps Open Source',
-    organization: 'GitHub Community',
-    description:
-      'Recognized as a top contributor for publishing reusable Terraform modules and GitHub Actions workflows adopted by the community.',
-  },
+ 
 ];
