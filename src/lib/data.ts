@@ -53,7 +53,7 @@ export const PROJECTS: Project[] = [
     title: 'PBL Management System',
     description:
       'Developed a live PBL (Project-Based Learning) Management System on AWS Lambda serving 5,000+ users, featuring separate panels for students, project guides, industry mentors, and admins, automating project workflows, guide allocation, and evaluation.',
-    stack: ['AWS Lambda', 'Node.js', 'React', 'DynamoDB', 'GitHub Actions'],
+    stack: ['AWS Lambda', 'Node.js', 'React', 'PostgreSQL', 'GitHub Actions'],
     githubUrl: 'https://github.com/aditya-shinde-45/pbl-management',
     featured: true,
     show: true,
@@ -64,7 +64,7 @@ export const PROJECTS: Project[] = [
     title: 'Beejsampada',
     description:
       'Developed an agricultural marketplace for oilseed trading and supply chain management, supporting multiple stakeholders including farmers, industries, oilseed buyers, and by-product buyers. Integrated Hyperledger blockchain with a token-based system to enable secure, transparent, and tamper-proof transactions.',
-    stack: ['Flutter', 'Dart'],
+    stack: ['Flutter', 'Dart','React','BlockChain','Node.JS'],
     githubUrl: 'https://github.com/aditya-shinde-45/oilseednexsus',
     show: true,
     isSIHWinner: true,
@@ -126,6 +126,8 @@ export const PROJECTS: Project[] = [
     stack: ['JavaScript'],
     githubUrl: 'https://github.com/aditya-shinde-45/war-impact-analytics',
     show: true,
+    isOngoing: true,
+
   },
 
   {
@@ -138,18 +140,10 @@ export const PROJECTS: Project[] = [
     liveUrl: 'https://skin-intel.vercel.app',
     isOngoing: true,
     show: true,
+
   },
 
-  {
-    id: 'neurosight',
-    title: 'NeuroSight',
-    description:
-      'Developed a neural network-based vision analysis system for image recognition and classification tasks. Utilized machine learning techniques to process visual data and generate accurate predictions for intelligent decision-making.',
-    stack: ['Python', 'Machine Learning'],
-    githubUrl: 'https://github.com/aditya-shinde-45/NeuroSight',
-    show: true,
-  },
-
+  
   {
     id: 'rasberry-pi-ml',
     title: 'Raspberry Pi ML',
