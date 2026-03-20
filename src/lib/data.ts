@@ -39,7 +39,7 @@ export const PERSONAL = {
   github: 'https://github.com/aditya-shinde-45',
   linkedin: 'https://www.linkedin.com/in/aditya-shinde45',
   summary:
-    'DevOps-focused Full Stack Developer with hands-on experience building and deploying scalable cloud-native applications on AWS. Deployed a PBL Management System on AWS Lambda serving 5,000+ users, implementing CI/CD pipelines and serverless architecture for scalability and cost efficiency.',
+"DevOps-focused Full Stack Developer with experience in building and deploying scalable cloud-native applications on AWS. Skilled in CI/CD, infrastructure-as-code, and developing production-ready systems. Contributed to real-world projects including a live PBL Management System serving 5,000+ users and a national-level 2025 SIH-winning solution."
 } as const;
 
 // ─── Projects ─────────────────────────────────────────────────────────────────

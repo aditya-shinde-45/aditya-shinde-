@@ -4,6 +4,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 import Navbar, { NAV_ITEMS } from './components/Navbar';
 import useScrollSpy from './hooks/useScrollSpy';
+import Footer from './components/Footer';
 
 import Hero from './sections/Hero';
 import About from './sections/About';
@@ -32,6 +33,7 @@ function App() {
       <Experience />
       <Achievements />
       <Contact />
+      <Footer />
     </div>
   );
 }

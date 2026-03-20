@@ -11,7 +11,7 @@ export interface NavbarProps {
 }
 
 export const NAV_ITEMS: NavItem[] = [
-  { label: 'Hero',         href: '#hero' },
+  { label: 'Home',         href: '#hero' },
   { label: 'About',        href: '#about' },
   { label: 'Projects',     href: '#projects' },
   { label: 'Experience',   href: '#experience' },
