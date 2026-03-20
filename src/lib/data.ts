@@ -87,16 +87,7 @@ export const PROJECTS: Project[] = [
     githubUrl: 'https://github.com/aditya-shinde-45/edumanage-college',
     show: true,
   },
-  {
-    id: 'cms-mini',
-    title: 'CMS Mini',
-    description:
-      'Lightweight content management system with a clean admin interface. Deployed on Vercel.',
-    stack: ['JavaScript'],
-    githubUrl: 'https://github.com/aditya-shinde-45/cms-mini',
-    liveUrl: 'https://cms-mini.vercel.app',
-    show: true,
-  },
+  
   {
     id: 'ai-production-scheduling',
     title: 'AI Production Scheduling',
@@ -324,11 +315,13 @@ export const PROJECTS: Project[] = [
 
 // ─── Skills ───────────────────────────────────────────────────────────────────
 
-export const SKILLS: Record<'cloud' | 'devops' | 'frontend' | 'backend', string[]> = {
-  cloud: ['AWS', 'AWS Lambda', 'EC2', 'S3', 'DynamoDB', 'CloudWatch', 'AWS SNS'],
-  devops: ['Docker', 'Kubernetes', 'CI/CD', 'GitHub Actions', 'Terraform', 'Linux'],
-  frontend: ['React', 'TypeScript', 'Tailwind CSS', 'Next.js', 'HTML5', 'CSS3'],
-  backend: ['Node.js', 'Express', 'REST APIs', 'MongoDB', 'PostgreSQL'],
+export const SKILLS: Record<'frontend' | 'backend' | 'languages' | 'database' | 'devops' | 'other', string[]> = {
+  frontend:  ['React.js', 'Tailwind CSS'],
+  backend:   ['Node.js', 'Flask', 'FastAPI'],
+  languages: ['Python', 'JavaScript', 'Java'],
+  database:  ['MySQL', 'MongoDB', 'PostgreSQL', 'Firebase'],
+  devops:    ['AWS', 'Docker', 'Kubernetes', 'Prometheus', 'Grafana', 'GitHub Actions', 'Linux', 'Shell Scripting'],
+  other:     ['System Design Fundamentals', 'Networking Fundamentals', 'IoT (Arduino UNO)', 'IoT (ESP32)'],
 };
 
 // ─── Experience ───────────────────────────────────────────────────────────────
@@ -346,14 +339,14 @@ export const EXPERIENCE: ExperienceEntry[] = [
     ],
   },
   {
-    company: 'Smart India Hackathon 2023',
-    role: 'Lead Developer — Winning Team',
-    period: 'Aug 2023 – Dec 2023',
+    company: 'Foodibles Pvt. Ltd.',
+    role: 'Flutter Developer',
+    period: 'Oct 2023 – Dec 2023',
     description: [
-      'Led a 6-member team to build the PBL Management System, a serverless platform serving 5,000+ users across multiple institutions.',
-      'Designed the AWS architecture: Lambda functions, API Gateway, DynamoDB tables, and S3 for static asset hosting.',
-      'Implemented a GitHub Actions pipeline for automated builds, tests, and deployments to AWS.',
-      'Won the Smart India Hackathon 2023 national-level competition in the software category.',
+      'Worked on a live production Flutter application for Foodibles Pvt. Ltd., a food-tech company based in Punjab.',
+      'Built and maintained frontend UI widgets and screens using Flutter and Dart.',
+      'Developed reusable custom widgets for the food ordering interface, improving UI consistency across the app.',
+      'Collaborated with the product team to translate designs into pixel-perfect Flutter components.',
     ],
   },
 ];

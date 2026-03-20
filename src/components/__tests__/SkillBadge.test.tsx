@@ -5,7 +5,7 @@ import * as fc from 'fast-check';
 import SkillBadge from '../SkillBadge';
 import type { SkillBadgeProps } from '../SkillBadge';
 
-const categories: SkillBadgeProps['category'][] = ['cloud', 'frontend', 'backend', 'devops'];
+const categories: SkillBadgeProps['category'][] = ['frontend', 'backend', 'languages', 'database', 'devops', 'other'];
 const categoryArb = fc.constantFrom(...categories);
 
 describe('SkillBadge', () => {
