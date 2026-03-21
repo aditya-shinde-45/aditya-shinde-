@@ -77,7 +77,7 @@ const About: React.FC = () => {
                   <span className="font-medium text-slate-700">
                     B.Tech in Computer Science & Engineering
                   </span>{' '}
-                  — MIT ADT University (2022–2026)
+                  — MIT ADT University (2024–2027)
                 </li>
 
                 <li>
