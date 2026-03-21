@@ -66,6 +66,29 @@ const About: React.FC = () => {
               I was also a key member of Team IdeaBliss, which developed BeejSampadha (Oilseed By-Product Value Chain) — our Smart India Hackathon 2025 project that secured a national-level win.
             </p>
 
+            {/* Education */}
+            <div className="mt-4">
+              <h4 className="text-sm font-semibold text-slate-700 mb-2">
+                Education
+              </h4>
+
+              <ul className="text-slate-500 text-sm leading-relaxed space-y-1">
+                <li>
+                  <span className="font-medium text-slate-700">
+                    B.Tech in Computer Science & Engineering
+                  </span>{' '}
+                  — MIT ADT University (2022–2026)
+                </li>
+
+                <li>
+                  <span className="font-medium text-slate-700">
+                    Diploma in Computer Science & Engineering
+                  </span>{' '}
+                  — Lovely Professional University
+                </li>
+              </ul>
+            </div>
+
             {/* Contact info snippet */}
             <p className="text-slate-400 text-sm mt-2">
               Based in {PERSONAL.location}
