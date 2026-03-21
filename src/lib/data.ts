@@ -210,17 +210,18 @@ export const SKILLS: Record<'frontend' | 'backend' | 'languages' | 'database' | 
 // ─── Experience ───────────────────────────────────────────────────────────────
 
 export const EXPERIENCE: ExperienceEntry[] = [
-  {
-    company: 'Freelance / Open Source',
-    role: 'Full Stack & DevOps Engineer',
-    period: 'June 2025 – Present',
-    description: [
-      'Architected and deployed serverless applications on AWS Lambda with DynamoDB, reducing infrastructure costs by ~60% compared to traditional EC2 setups.',
-      'Built and maintained CI/CD pipelines using GitHub Actions for automated testing, linting, and zero-downtime deployments.',
-      'Containerized multiple Node.js and React applications using Docker; orchestrated with Kubernetes for local development environments.',
-      'Contributed Terraform modules for reusable AWS infrastructure provisioning, adopted by 3+ open-source projects.',
-    ],
-  },
+ {
+  company: 'MIT ADT University',
+  role: 'Full Stack Developer Intern',
+  period: 'June 2025 – August 2025',
+  description: [
+    'Developed a PBL (Project-Based Learning) Management System serving 5,000+ students and 300+ faculty with role-based access for students, guides, mentors, and admins.',
+    'Built responsive frontend using React.js and developed scalable backend APIs with Node.js and Express.js.',
+    'Deployed the application on AWS Lambda with a fully automated CI/CD pipeline using GitHub Actions for seamless and reliable updates.',
+    'Integrated Amazon S3 for secure document storage and implemented cloud-based monitoring and performance optimization.',
+    'Followed Agile development methodology with iterative sprints, team collaboration, and continuous delivery practices.',
+  ],
+},
   {
     company: 'Foodibles Pvt. Ltd.',
     role: 'Flutter Developer',
@@ -246,17 +247,11 @@ export const ACHIEVEMENTS: Achievement[] = [
   },
   {
     icon: '☁️',
-    title: 'AWS Certified Cloud Practitioner',
+    title: 'AWS Academy Graduate – Cloud Foundation',
     organization: 'Amazon Web Services',
     description:
       'Validated foundational knowledge of AWS cloud services, architecture best practices, security, and pricing models.',
   },
-  {
-    icon: '🐳',
-    title: 'Docker Certified Associate (In Progress)',
-    organization: 'Docker, Inc.',
-    description:
-      'Pursuing certification to validate expertise in containerization, Docker Compose, and container orchestration workflows.',
-  },
+  
  
 ];
