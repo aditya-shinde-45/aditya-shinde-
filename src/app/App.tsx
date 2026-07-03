@@ -5,6 +5,7 @@ import {
   Github, Linkedin, Mail, MapPin, Send,
 } from "lucide-react";
 import heroImg from "../imports/image-1.png";
+import resumePdf from "../imports/adityashinde fullstack.pdf";
 
 // ─── Data ─────────────────────────────────────────────────────────────────────
 const NAV_IDS = ["home","about","experience","toolkit","projects","achievements","contact"];
@@ -419,7 +420,9 @@ function Hero() {
                   Walk Through the Builds <ArrowRight size={15} />
                 </button>
                 <a
-                  href="#"
+                  href={resumePdf}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-5 py-3 border border-[#1A1A1A] text-[#1A1A1A] text-sm font-medium rounded-lg hover:bg-[#1A1A1A] hover:text-white transition-colors"
                   style={{ fontFamily: "Inter, sans-serif" }}>
                   Get the Resume <Download size={15} />
