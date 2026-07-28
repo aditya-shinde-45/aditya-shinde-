@@ -51,30 +51,30 @@ const featuredProjects = [
   {
     id: "creditshield",
     name: "CreditShield",
-    problem: "Loan appraisal in India still relies on credit officers eyeballing statements and applying rules inconsistently across borrower types — the risk isn't just bad loans, it's opaque decisions no one can audit.",
-    what: "Built a full-stack Loan Origination and Management System with an AI appraisal engine that handles salaried, self-employed, and business borrowers — each modeled with distinct risk profiles, not a single blunt score. The rule engine processes 200+ business rules across loan types and produces explainable risk flags, so credit officers understand exactly why a decision was made and can act on it. The default risk ML model was trained on engineered transaction features — income volatility, EMI-to-income ratio — using a synthetic dataset built from real SBI bank statement distributions. Microservices containerized with Docker and PostgreSQL, architected for horizontal scaling as loan volume grows.",
-    outcome: "AI Grand Challenge 2026 Winner. Three borrower profiles, one system. Every decision explainable to the officer reviewing it.",
-    stack: "Full-Stack LOS/LMS · ML Risk Model · Docker · PostgreSQL · Rule Engine (200+ rules) · Microservices",
+    problem: "Loan appraisal still relies on credit officers applying rules inconsistently — the risk isn't just bad loans, it's opaque decisions no one can audit.",
+    what: "Built a full-stack LOS/LMS with an AI appraisal engine handling salaried, self-employed, and business borrowers — each with distinct risk profiles. The rule engine processes 200+ business rules and produces explainable risk flags so officers know exactly why a decision was made.",
+    outcome: "AI Grand Challenge 2026 Winner · 3 borrower profiles · every decision auditable",
+    stack: "Full-Stack LOS/LMS · ML Risk Model · Docker · PostgreSQL · Rule Engine · Microservices",
     repo: "https://github.com/aditya-shinde-45?tab=repositories",
     flip: false,
   },
   {
     id: "beejsamapadha",
     name: "BeejSamapadha",
-    problem: "Agricultural supply chains in India are opaque by default — farmers, distributors, and retailers operate on trust with no verifiable record of what moved, when, and at what quality.",
-    what: "Built a full supply chain intelligence platform with a blockchain traceability layer ensuring tamper-proof records across every handoff from farm to retailer. Smart contract–driven workflows handle product tracking so authenticity and provenance aren't self-reported — they're cryptographically enforced. An AI/ML demand forecasting model reads historical patterns to guide crop planning and reduce oversupply losses before they happen. The Flutter mobile app serves three completely different users from one codebase: crop-listing tools for farmers, procurement trend dashboards for buyers, and district-level analytics for policymakers — none of them feeling like an afterthought of the other. A soil sensor AI model (moisture, pH, N/P/K, temperature, humidity) closes the loop at the farm level, forecasting yield, generating harvest schedules, and recommending fertilization plans before a seed goes in the ground.",
-    outcome: "Smart India Hackathon 2025 Winner. Led the team through planning, development, and national-level evaluation — coordinating across technical strengths under tight deadlines.",
-    stack: "Flutter · Blockchain · Smart Contracts · AI/ML Forecasting · Soil Sensor AI · Firebase · FastAPI",
+    problem: "Agricultural supply chains are opaque by default — no verifiable record of what moved, when, or at what quality.",
+    what: "Built a supply chain platform with a blockchain traceability layer — tamper-proof records from farm to retailer, cryptographically enforced. One Flutter codebase serves three users: crop-listing for farmers, procurement dashboards for buyers, district analytics for policymakers.",
+    outcome: "Smart India Hackathon 2025 Winner · 3 user roles · 1 codebase · national evaluation",
+    stack: "Flutter · Blockchain · Smart Contracts · AI/ML Forecasting · Firebase · FastAPI",
     repo: "https://github.com/aditya-shinde-45?tab=repositories",
     flip: true,
   },
   {
     id: "wareconomics",
-    name: "Economic Impact of Global Wars on Financial Markets",
-    problem: "The relationship between armed conflict and economic collapse is assumed but rarely quantified — most analysis stays qualitative, which means policymakers and analysts are pattern-matching on instinct rather than data.",
-    what: "Analyzed how major conflicts affect GDP, inflation, commodity prices, and stock market volatility across war versus non-war periods — spanning multiple countries and decades of data. Unified datasets from World Bank, Yahoo Finance, UCDP, and FRED into a single clean analytical base, with all data cleaning and preprocessing done in R before any analysis touched it. Built interactive Power BI dashboards for KPI tracking and R/ggplot2 visualizations for statistical exploration. The final output was structured as a narrative accessible to non-finance audiences — not a chart dump, but a legible argument backed by the numbers.",
-    outcome: "Innotex Competition — Runner-Up. Cross-decade, cross-country analysis distilled into a presentation that non-specialists could follow and act on.",
-    stack: "R · ggplot2 · Power BI · Data Preprocessing in R · Statistical Analysis",
+    name: "Economic Impact of Global Wars",
+    problem: "The link between armed conflict and economic collapse is assumed but rarely quantified — analysts pattern-match on instinct rather than data.",
+    what: "Unified datasets from World Bank, Yahoo Finance, UCDP, and FRED to analyze how conflicts affect GDP, inflation, and market volatility across decades. Built Power BI dashboards and R/ggplot2 visualizations — structured as a legible argument, not a chart dump.",
+    outcome: "Innotex Competition Runner-Up · cross-decade analysis · accessible to non-finance audiences",
+    stack: "R · ggplot2 · Power BI · Statistical Analysis",
     repo: "https://github.com/aditya-shinde-45/war-impact-analytics",
     flip: false,
   },
@@ -129,37 +129,39 @@ const experience = [
     company: "MIT ADT University",
     role: "Full Stack Developer Intern",
     period: "Jun 2025 – Aug 2025",
-    scene: "Building internal university infrastructure at scale — systems that 5,000+ students and 300+ faculty would actually depend on, where a deployment failure isn't a staging issue, it's a blocked cohort.",
+    scene: "University infrastructure at real scale — 5,000+ students, 300+ faculty, where a deployment failure blocks a cohort.",
     highlights: [
-      "Architected a PBL Management System on AWS Lambda serving 5,000+ students and 300+ faculty — covering document submissions, evaluations, and project tracking end-to-end.",
-      "Built CI/CD pipelines with GitHub Actions for automated build, test, and zero-downtime deployments.",
-      "Integrated Amazon S3 with versioning and access control for document storage across academic cohorts.",
-      "Implemented REST APIs with RBAC (JWT auth), enforcing strict data isolation between student and faculty portals.",
+      "Architected PBL Management System on AWS Lambda — document submissions, evaluations, and project tracking end-to-end.",
+      "Built CI/CD pipelines with GitHub Actions for zero-downtime deployments.",
+      "Integrated Amazon S3 with versioning and access control for academic document storage.",
+      "Implemented REST APIs with RBAC (JWT auth) enforcing strict data isolation between portals.",
     ],
   },
   {
     company: "Foodibles India LLP",
     role: "Developer Project Intern",
     period: "Oct 2023 – Apr 2024",
-    scene: "First production environment — a real food-tech app with real users, real orders, and the kind of bugs that show up at 8pm on a Friday when no one planned for them.",
+    scene: "First production environment — real users, real orders, real bugs at 8pm on a Friday.",
     highlights: [
-      "Built a Flutter mobile app with reusable widget libraries, accelerating cross-team feature delivery without duplicating UI logic.",
-      "Designed Firebase Firestore NoSQL schema for real-time menu, order, and user management.",
-      "Integrated Firebase Auth, Storage, and Cloud Functions for onboarding flows, push notifications, and order lifecycle management.",
-      "Resolved production bugs, profiled performance bottlenecks, and shipped iterative improvements in an Agile environment.",
+      "Built Flutter mobile app with reusable widget libraries, accelerating cross-team feature delivery.",
+      "Designed Firebase Firestore schema for real-time menu, order, and user management.",
+      "Integrated Firebase Auth, Storage, and Cloud Functions for onboarding and order lifecycle.",
+      "Resolved production bugs and shipped iterative improvements in an Agile environment.",
     ],
   },
 ];
 
 const achievements = [
   {
-    title: "Smart India Hackathon 2025 — Finalist",
-    meaning: "36 hours. One working system. A farm intrusion detector that actually ran on the hardware we brought. That is the version of pressure I want more of.",
+    title: "Smart India Hackathon 2025",
+    badge: "Winner",
+    meaning: "36 hours. One working system. The version of pressure I want more of.",
     year: "2025",
   },
   {
-    title: "AI Grand Challenge 2026 — Selected Participant",
-    meaning: "Chosen from a national pool to build multimodal AI for agricultural disease detection — the problem domain that sharpened my edge-AI intuition.",
+    title: "AI Grand Challenge 2026",
+    badge: "Winner",
+    meaning: "Chosen nationally to build multimodal AI for agricultural disease detection.",
     year: "2026",
   },
 ];
@@ -461,71 +463,70 @@ function Hero() {
 
 // ─── About ────────────────────────────────────────────────────────────────────
 function About() {
+  const stats = [
+    { value: "15+", label: "Projects Shipped" },
+    { value: "2×", label: "National Hackathon Winner" },
+    { value: "6", label: "Engineering Disciplines" },
+  ];
   return (
     <section id="about" className="bg-white py-28">
       <div className="max-w-[1280px] mx-auto px-6">
-        <div className="grid lg:grid-cols-[1fr_320px] gap-20 items-start">
+        <div className="grid lg:grid-cols-[1fr_300px] gap-20 items-start">
           <div>
             <FadeUp>
               <SectionLabel>Engineering Journey</SectionLabel>
-              <h2 className="text-[36px] md:text-[44px] font-bold text-[#1A1A1A] leading-[1.1] tracking-tight mb-8"
+              <h2 className="text-[36px] md:text-[44px] font-bold text-[#1A1A1A] leading-[1.1] tracking-tight mb-6"
                 style={{ fontFamily: "Plus Jakarta Sans, sans-serif" }}>
                 I didn&apos;t start at the infrastructure layer.
               </h2>
             </FadeUp>
 
             <FadeUp delay={0.06}>
-              <p className="text-[17px] text-[#5C5C5C] leading-[1.8] mb-6" style={{ fontFamily: "Inter, sans-serif" }}>
-                I started at the pixel — and kept asking what happens after someone clicks the button. What runs it?
-                Where does that state go? What breaks it at scale? Each question pulled me a layer deeper, until I was
-                designing the infrastructure the same way I used to design the interface: with the same care about
-                failure states, load paths, and the person on the other end. That question followed me from a Diploma in
-                Computer Science at Lovely Professional University into a B.Tech at MIT ADT — same question, bigger
-                systems each time.
+              <p className="text-[16px] text-[#5C5C5C] leading-[1.75] mb-4" style={{ fontFamily: "Inter, sans-serif" }}>
+                I started at the pixel — and kept asking what happens after someone clicks the button.
+                Each question pulled me a layer deeper, until I was designing infrastructure with the same
+                care I used to give interfaces: failure states, load paths, the person on the other end.
               </p>
-              <p className="text-[17px] text-[#5C5C5C] leading-[1.8] mb-6" style={{ fontFamily: "Inter, sans-serif" }}>
-                Smart India Hackathon 2025 was the moment that crystallized it. Thirty-six hours. A real agricultural
-                supply chain problem with three different stakeholders — farmers, distributors, retailers — each needing
-                something different from the same system. The constraint wasn&apos;t the hardware — it was building one
-                mobile app with role-specific dashboards that gave a farmer crop-listing tools, a buyer procurement
-                trends, and a policymaker district analytics, without any of them feeling like an afterthought.
-                That&apos;s not a hackathon problem. That&apos;s a product problem.
+              <p className="text-[16px] text-[#5C5C5C] leading-[1.75] mb-5" style={{ fontFamily: "Inter, sans-serif" }}>
+                That curiosity started with a Diploma in CSE from Lovely Professional University and carried
+                forward into a B.Tech in Computer Science at MIT ADT University — building on a strong
+                foundation in cloud technologies, databases, and full-stack development to ship scalable,
+                production-ready systems.
               </p>
-              <p className="text-[17px] text-[#5C5C5C] leading-[1.8]" style={{ fontFamily: "Inter, sans-serif" }}>
-                MIT-ADT AI Grand Challenge 2026 followed — another national hackathon, same instinct at a different
-                layer. Multimodal disease detection for crops at the edge. Good infrastructure and good UX are the same
-                discipline applied at different layers. The user is just different — sometimes it&apos;s a farmer,
-                sometimes it&apos;s a bank transaction.
-              </p>
+            </FadeUp>
+
+            {/* Stat cards */}
+            <FadeUp delay={0.12}>
+              <div className="grid grid-cols-3 gap-4 mt-10">
+                {stats.map((s) => (
+                  <div key={s.label} className="border border-[#E7E5DF] rounded-xl p-5 bg-[#FAF9F6]">
+                    <p className="text-[28px] font-extrabold text-[#3B4A6B] leading-none mb-1" style={{ fontFamily: "Plus Jakarta Sans, sans-serif" }}>{s.value}</p>
+                    <p className="text-[12px] text-[#9B9B9B]" style={{ fontFamily: "Inter, sans-serif" }}>{s.label}</p>
+                  </div>
+                ))}
+              </div>
             </FadeUp>
           </div>
 
           {/* Education — right column */}
           <div className="lg:sticky lg:top-28">
-            <FadeUp delay={0.12}>
+            <FadeUp delay={0.14}>
               <p className="text-[11px] font-semibold tracking-[0.14em] text-[#9B9B9B] uppercase mb-6"
                 style={{ fontFamily: "Inter, sans-serif" }}>Education</p>
-              <div className="space-y-8">
-                <div className="border-t border-[#E7E5DF] pt-5">
-                  <p className="text-[11px] text-[#9B9B9B] mb-1.5 tabular-nums"
-                    style={{ fontFamily: "Inter, sans-serif" }}>2024 – 2027</p>
-                  <p className="text-[15px] font-semibold text-[#1A1A1A] mb-0.5"
-                    style={{ fontFamily: "Plus Jakarta Sans, sans-serif" }}>B.Tech — CSE</p>
-                  <p className="text-[13px] text-[#5C5C5C]"
-                    style={{ fontFamily: "Inter, sans-serif" }}>MIT ADT University, Pune</p>
-                </div>
-                <div className="border-t border-[#E7E5DF] pt-5">
-                  <p className="text-[11px] text-[#9B9B9B] mb-1.5 tabular-nums"
-                    style={{ fontFamily: "Inter, sans-serif" }}>2022 – 2024</p>
-                  <p className="text-[15px] font-semibold text-[#1A1A1A] mb-0.5"
-                    style={{ fontFamily: "Plus Jakarta Sans, sans-serif" }}>Diploma — CSE</p>
-                  <p className="text-[13px] text-[#5C5C5C]"
-                    style={{ fontFamily: "Inter, sans-serif" }}>Lovely Professional University</p>
-                </div>
+              <div className="space-y-4">
+                {[
+                  { period: "2024 – 2027", degree: "B.Tech — CSE", school: "MIT ADT University, Pune" },
+                  { period: "2022 – 2024", degree: "Diploma — CSE", school: "Lovely Professional University" },
+                ].map((ed) => (
+                  <div key={ed.degree} className="border border-[#E7E5DF] rounded-xl p-5 bg-[#FAF9F6]">
+                    <p className="text-[11px] text-[#9B9B9B] mb-1 tabular-nums" style={{ fontFamily: "Inter, sans-serif" }}>{ed.period}</p>
+                    <p className="text-[15px] font-semibold text-[#1A1A1A] mb-0.5" style={{ fontFamily: "Plus Jakarta Sans, sans-serif" }}>{ed.degree}</p>
+                    <p className="text-[13px] text-[#5C5C5C]" style={{ fontFamily: "Inter, sans-serif" }}>{ed.school}</p>
+                  </div>
+                ))}
               </div>
             </FadeUp>
           </div>
-
         </div>
       </div>
     </section>
@@ -609,20 +610,18 @@ function Projects() {
                   </p>
                 </div>
                 <div>
-                  <p className="text-[15px] text-[#5C5C5C] leading-[1.85] mb-5"
+                  <p className="text-[15px] text-[#5C5C5C] leading-[1.8] mb-5"
                     style={{ fontFamily: "Inter, sans-serif" }}>{p.what}</p>
-                  <div className="border-l-2 border-[#3B4A6B] pl-4 mb-6">
-                    <p className="text-[14px] font-medium text-[#3B4A6B] leading-relaxed"
-                      style={{ fontFamily: "Inter, sans-serif" }}>{p.outcome}</p>
+                  {/* Outcome card */}
+                  <div className="bg-[#EDF0F5] border border-[#D6DCE8] rounded-xl px-5 py-4 mb-5">
+                    <p className="text-[13px] font-semibold text-[#3B4A6B]" style={{ fontFamily: "Inter, sans-serif" }}>{p.outcome}</p>
                   </div>
-                  <p className="text-[12px] text-[#9B9B9B] tracking-wide"
+                  <p className="text-[12px] text-[#9B9B9B] tracking-wide mb-4"
                     style={{ fontFamily: "Inter, sans-serif" }}>{p.stack}</p>
-                  <div className="flex gap-3 mt-5">
-                    <a href={p.repo} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-[13px] text-[#3B4A6B] font-medium hover:underline"
-                      style={{ fontFamily: "Inter, sans-serif" }}>
-                      <Github size={14} /> Repository
-                    </a>
-                  </div>
+                  <a href={p.repo} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-[13px] text-[#3B4A6B] font-medium hover:underline"
+                    style={{ fontFamily: "Inter, sans-serif" }}>
+                    <Github size={14} /> Repository
+                  </a>
                 </div>
               </div>
             </FadeUp>
@@ -735,15 +734,19 @@ function Achievements() {
           </h2>
         </FadeUp>
 
-        <div className="grid md:grid-cols-2 gap-12 mb-20">
+        <div className="grid md:grid-cols-2 gap-6 mb-20">
           {achievements.map((a, i) => (
             <FadeUp key={a.title} delay={i * 0.07}>
-              <div>
-                <span className="text-[11px] font-bold tracking-[0.12em] text-[#9B9B9B] uppercase"
-                  style={{ fontFamily: "Inter, sans-serif" }}>{a.year}</span>
-                <h3 className="text-[19px] font-bold text-[#1A1A1A] mt-2 mb-3 leading-snug"
+              <div className="border border-[#E7E5DF] rounded-xl p-7 bg-white h-full">
+                <div className="flex items-center justify-between mb-4">
+                  <span className="text-[11px] font-bold tracking-[0.12em] text-[#9B9B9B] uppercase"
+                    style={{ fontFamily: "Inter, sans-serif" }}>{a.year}</span>
+                  <span className="text-[11px] font-semibold text-[#3B4A6B] bg-[#EDF0F5] px-3 py-1 rounded-full"
+                    style={{ fontFamily: "Inter, sans-serif" }}>{a.badge}</span>
+                </div>
+                <h3 className="text-[18px] font-bold text-[#1A1A1A] mb-3 leading-snug"
                   style={{ fontFamily: "Plus Jakarta Sans, sans-serif" }}>{a.title}</h3>
-                <p className="text-[15px] text-[#5C5C5C] leading-[1.8] italic"
+                <p className="text-[14px] text-[#5C5C5C] leading-[1.7] italic"
                   style={{ fontFamily: "Inter, sans-serif" }}>
                   &ldquo;{a.meaning}&rdquo;
                 </p>
@@ -782,6 +785,9 @@ function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    const subject = encodeURIComponent("Portfolio Contact: " + form.name);
+    const body = encodeURIComponent(`Name: ${form.name}\nEmail: ${form.email}\n\n${form.message}`);
+    window.open(`https://mail.google.com/mail/?view=cm&to=adityakrishnatshinde07@gmail.com&su=${subject}&body=${body}`, "_blank");
     setSent(true);
   };
 
